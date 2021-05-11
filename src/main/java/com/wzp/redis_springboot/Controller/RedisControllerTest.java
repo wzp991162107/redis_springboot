@@ -17,6 +17,7 @@ public class RedisControllerTest {
     public String testRedis(){
         //设置值到redis
         redisTemplate.opsForValue().set("name","wzp");
+        System.out.println("111111");
 
         String name = (String)redisTemplate.opsForValue().get("name");
         return name;
